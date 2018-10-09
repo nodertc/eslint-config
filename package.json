@@ -1,0 +1,40 @@
+{
+  "name": "@nodertc/eslint-config",
+  "version": "0.0.0",
+  "description": "NodeRTC's eslint config",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nodertc/eslint-config.git"
+  },
+  "keywords": [
+    "nodertc",
+    "eslint",
+    "config"
+  ],
+  "author": "Dmitriy Tsvettsikh <me@reklatsmasters.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nodertc/eslint-config/issues"
+  },
+  "homepage": "https://github.com/nodertc/eslint-config#readme",
+  "peerDependencies": {
+    "eslint": "^5",
+    "prettier": "^1"
+  },
+  "dependencies": {
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-config-prettier": "^3.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsdoc": "^3.8.0",
+    "eslint-plugin-no-use-extend-native": "^0.3.12",
+    "eslint-plugin-node": "^7.0.1",
+    "eslint-plugin-prettier": "^3.0.0",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-security": "^1.4.0",
+    "eslint-plugin-unicorn": "^6.0.1"
+  }
+}
