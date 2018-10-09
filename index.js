@@ -11,7 +11,8 @@ module.exports = {
     'plugin:security/recommended',
     'plugin:import/recommended',
     'plugin:jsdoc/recommended',
-    'prettier'
+    'prettier',
+    'prettier/unicorn'
   ],
   plugins: [
     'no-use-extend-native',
@@ -112,9 +113,6 @@ module.exports = {
     'import/order': 'error',
     'import/no-cycle': 'error',
 
-    // Conflicts with Prettier.
-    'unicorn/number-literal-case': 'off',
-    'unicorn/escape-case': 'off',
     // Enable due to security reasons.
     'unicorn/no-unsafe-regex': 'error',
     // Disable Browser-related rule.
