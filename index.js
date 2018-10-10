@@ -40,7 +40,7 @@ module.exports = {
     'prettier/prettier': ['error', {
       singleQuote: true,
       trailingComma: 'es5'
-    }, { withNodeModules: false }],
+    }, { withNodeModules: true }],
 
     // Enforce valid JSDoc comments.
     // https://eslint.org/docs/rules/valid-jsdoc
