@@ -105,7 +105,8 @@ module.exports = {
     'import/newline-after-import': 'error',
     'import/no-amd': 'error',
     'import/no-duplicates': 'error',
-    'import/no-extraneous-dependencies': 'error',
+    // Incompatible with multiple node_modules folders.
+    'import/no-extraneous-dependencies': 'off',
     'import/no-mutable-exports': 'error',
     'import/no-named-as-default-member': 'error',
     'import/no-named-as-default': 'error',
@@ -132,10 +133,14 @@ module.exports = {
     'security/detect-non-literal-regexp': 'error',
     // Disable due to unused feature.
     'security/detect-possible-timing-attacks': 'off',
+    // Disable due to many false-positive warnings.
+    'security/detect-object-injection': 'off',
 
     'jsdoc/newline-after-description': 'off',
     'jsdoc/require-returns-description': 'off',
     'jsdoc/require-param-description': 'off',
     'jsdoc/require-description-complete-sentence': 'warn',
+    // Doesn't resolve types properly.
+    'jsdoc/no-undefined-types': 'off'
   }
 }
