@@ -32,7 +32,7 @@
     "eslint-plugin-jsdoc": "^3.8.0",
     "eslint-plugin-no-use-extend-native": "^0.3.12",
     "eslint-plugin-node": "^7.0.1",
-    "eslint-plugin-prettier": "^3.0.0",
+    "eslint-plugin-prettier": "github:reklatsmasters/eslint-plugin-prettier#4ab71913fcf08bb38878d50d104782a324441a6f",
     "eslint-plugin-promise": "^4.0.1",
     "eslint-plugin-security": "^1.4.0",
     "eslint-plugin-unicorn": "^6.0.1"
