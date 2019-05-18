@@ -39,8 +39,14 @@ module.exports = {
   rules: {
     'prettier/prettier': ['error', {
       singleQuote: true,
-      trailingComma: 'es5'
-    }, { withNodeModules: true }],
+      trailingComma: 'es5',
+      printWidth: 100,
+      endOfLine: 'lf'
+    }, {
+      fileInfoOptions: {
+        withNodeModules: true
+      }
+    }],
 
     // Enforce valid JSDoc comments.
     // https://eslint.org/docs/rules/valid-jsdoc
@@ -83,6 +89,10 @@ module.exports = {
     // Require to use strict mode in nodejs.
     // https://eslint.org/docs/rules/strict
     'strict': ['error', 'global'],
+    // I use underscores in symbols or constants.
+    'no-underscore-dangle': 'off',
+    // I often use bitwise operators.
+    'no-bitwise': 'off',
 
     // Mix rules with recommended set.
     'promise/always-return': 'off',
@@ -113,17 +123,32 @@ module.exports = {
     'import/no-unresolved': ['error', { commonjs: true }],
     'import/order': 'error',
     'import/no-cycle': 'error',
+    'import/no-unused-modules': ['error', { unusedExports: true }],
 
     // Enable due to security reasons.
     'unicorn/no-unsafe-regex': 'error',
-    // Disable Browser-related rule.
+    // Disable Browser-related rules.
     'unicorn/prefer-add-event-listener': 'off',
+    'unicorn/prefer-text-content': 'off',
+    'unicorn/prefer-node-append': 'off',
+    'unicorn/prefer-node-remove': 'off',
+    'unicorn/prefer-query-selector': 'off',
+    // Makes code ugly in some cases.
+    'unicorn/no-for-loop': 'off',
 
     'node/exports-style': ['error', 'module.exports'],
     // Use eslint-plugin-import instead.
     'node/no-extraneous-require': 'off',
     'node/no-missing-import': 'off',
     'node/no-missing-require': 'off',
+    // 'Prefer global' rules
+    'node/prefer-global/buffer': 'error',
+    'node/prefer-global/console': 'error',
+    'node/prefer-global/process': 'error',
+    'node/prefer-global/text-decoder': 'error',
+    'node/prefer-global/text-encoder': 'error',
+    'node/prefer-global/url-search-params': 'error',
+    'node/prefer-global/url': 'error',
 
     // Already checked by eslint-plugin-unicorn.
     'security/detect-unsafe-regex': 'off',
